@@ -1,6 +1,6 @@
 #include<iostream>
 #include<vector>
-#include"spin.hpp"
+#include"spins.hpp"
 using namespace std;
 int main(int argc, const char * argv[]) 
 {
