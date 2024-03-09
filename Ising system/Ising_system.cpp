@@ -44,13 +44,12 @@ public:
     };
     double eval_energy_1D()const{
         double H=0;
-        if(n_spins==1&&_sz(0)){H=0.5;}
+        if(n_spins==1&&_sz(0)==1){H=0.5;}
+        if(n_spins==1&&_sz(0)==-1){H=-0.5;}
         for(int i=0;i<n_spins;i++){
-            for(int j=0;j<n_spins;j++){
-                if(j==i){continue;}
-                H+=(-0.5)*J*_sz(i)*_sz(j);
+            if(i==n_spins-1){H+=(-0.5)*J*_sz(i)*_sz(0);}
+            else{H+=(-0.5)*J*_sz(i)*_sz(i+1);}
             };
-        };
         return H;
     };
 };
