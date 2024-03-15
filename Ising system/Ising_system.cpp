@@ -11,7 +11,7 @@ private:
     std::vector<IsingSpin> spin;
 public:
     IsingSystem(const int n_spins_spec):J(-1.0),n_spins(n_spins_spec),maxrep_state(static_cast<long long>(std::pow(2,n_spins))-1){
-        spin.resize(n_spins);
+    spin.resize(n_spins);
 };
     virtual ~IsingSystem(){};
     

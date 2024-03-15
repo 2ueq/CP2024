@@ -1,0 +1,24 @@
+Start testing: Mar 15 22:38 CST
+----------------------------------------------------------
+1/1 Testing: UnitTests
+1/1 Test: UnitTests
+Command: "/home/coups/CP2024/build/UnitTests_catch2"
+Directory: /home/coups/CP2024/build
+"UnitTests" start time: Mar 15 22:38 CST
+Output:
+----------------------------------------------------------
+#7的M=-4
+#7的E=-6
+#77的M=-2
+#77的E=2
+#777的M=-2
+#777的E=-2
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"UnitTests" end time: Mar 15 22:38 CST
+"UnitTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 15 22:38 CST
