@@ -1,6 +1,6 @@
 #include<iostream>
 #include<vector>
-#include"spins.hpp"
+#include"IsingSpins.hpp"
 using namespace std;
 int main(int argc, const char * argv[]) 
 {
