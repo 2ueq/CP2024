@@ -1,0 +1,115 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/_deps/catch2-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 131,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 141,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 152,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 162,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 186,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Catch2",
+			"paths" : 
+			[
+				"build/_deps/catch2-build/Catch2Config.cmake",
+				"build/_deps/catch2-build/Catch2ConfigVersion.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "share/doc/Catch2",
+			"paths" : 
+			[
+				{
+					"from" : "build/_deps/catch2-src/docs",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/Catch2",
+			"paths" : 
+			[
+				"build/_deps/catch2-src/extras/ParseAndAddCatchTests.cmake",
+				"build/_deps/catch2-src/extras/Catch.cmake",
+				"build/_deps/catch2-src/extras/CatchAddTests.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "share/Catch2",
+			"paths" : 
+			[
+				"build/_deps/catch2-src/extras/gdbinit",
+				"build/_deps/catch2-src/extras/lldbinit"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "share/pkgconfig",
+			"paths" : 
+			[
+				"build/_deps/catch2-build/catch2.pc",
+				"build/_deps/catch2-build/catch2-with-main.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/catch2-build",
+		"source" : "build/_deps/catch2-src"
+	}
+}

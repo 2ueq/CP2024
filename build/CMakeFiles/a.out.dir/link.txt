@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/a.out.dir/main.cpp.o -o a.out 
+/usr/bin/g++ -g CMakeFiles/a.out.dir/main.cpp.o -o a.out 

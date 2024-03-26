@@ -148,6 +148,12 @@ TEST_CASE("IsingSystem_Square","[examples of 6*6 spins]"){
         REQUIRE_THAT(model.eval_energy(),Catch::Matchers::WithinULP(-4.0,4));
     };
 
+        SECTION("'pi'state:Magnectization and Energy"){
+        std::vector<bool>state({0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0});
+        model.set_state(state);
+        REQUIRE_THAT(model.eval_energy(),Catch::Matchers::WithinULP(-72.0,4));
+    };
+
 };
 
 TEST_CASE("IsingSystem_Square","[tests of exact counting]"){
