@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSpin.cpp.o"
-  "CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSpin.cpp.o.d"
-  "CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSystem.cpp.o"
-  "CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSystem.cpp.o.d"
+  "CMakeFiles/UnitTests_catch2.dir/UnitTest.cpp.o"
+  "CMakeFiles/UnitTests_catch2.dir/UnitTest.cpp.o.d"
   "UnitTests_catch2"
   "UnitTests_catch2.pdb"
 )

@@ -192,4 +192,18 @@ CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSpin.cpp.o: \
  /home/coups/CP2024/build/_deps/catch2-src/src/catch2/../catch2/matchers/internal/catch_matchers_impl.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/coups/CP2024/Ising\ system/spins.hpp
+ /home/coups/CP2024/Ising\ system/IsingSpins.hpp \
+ /home/coups/CP2024/Ising\ system/Ising_system.hpp \
+ /usr/include/c++/11/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /home/coups/CP2024/Ising\ system/IsingSpins.hpp \
+ /home/coups/CP2024/Ising\ system/IsingSpinOnLattice.hpp \
+ /home/coups/CP2024/Ising\ system/IsingSpinOnLattice.hpp

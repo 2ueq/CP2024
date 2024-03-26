@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/coups/CP2024/UnitTest_IsingSpin.cpp" "CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSpin.cpp.o" "gcc" "CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSpin.cpp.o.d"
-  "/home/coups/CP2024/UnitTest_IsingSystem.cpp" "CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSystem.cpp.o" "gcc" "CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSystem.cpp.o.d"
+  "/home/coups/CP2024/UnitTest.cpp" "CMakeFiles/UnitTests_catch2.dir/UnitTest.cpp.o" "gcc" "CMakeFiles/UnitTests_catch2.dir/UnitTest.cpp.o.d"
   )
 
 # Targets to which this target links.

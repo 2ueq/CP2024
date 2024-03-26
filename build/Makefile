@@ -243,53 +243,29 @@ Catch2WithMain/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build
 .PHONY : Catch2WithMain/fast
 
-UnitTest_IsingSpin.o: UnitTest_IsingSpin.cpp.o
-.PHONY : UnitTest_IsingSpin.o
+UnitTest.o: UnitTest.cpp.o
+.PHONY : UnitTest.o
 
 # target to build an object file
-UnitTest_IsingSpin.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTests_catch2.dir/build.make CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSpin.cpp.o
-.PHONY : UnitTest_IsingSpin.cpp.o
+UnitTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTests_catch2.dir/build.make CMakeFiles/UnitTests_catch2.dir/UnitTest.cpp.o
+.PHONY : UnitTest.cpp.o
 
-UnitTest_IsingSpin.i: UnitTest_IsingSpin.cpp.i
-.PHONY : UnitTest_IsingSpin.i
-
-# target to preprocess a source file
-UnitTest_IsingSpin.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTests_catch2.dir/build.make CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSpin.cpp.i
-.PHONY : UnitTest_IsingSpin.cpp.i
-
-UnitTest_IsingSpin.s: UnitTest_IsingSpin.cpp.s
-.PHONY : UnitTest_IsingSpin.s
-
-# target to generate assembly for a file
-UnitTest_IsingSpin.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTests_catch2.dir/build.make CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSpin.cpp.s
-.PHONY : UnitTest_IsingSpin.cpp.s
-
-UnitTest_IsingSystem.o: UnitTest_IsingSystem.cpp.o
-.PHONY : UnitTest_IsingSystem.o
-
-# target to build an object file
-UnitTest_IsingSystem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTests_catch2.dir/build.make CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSystem.cpp.o
-.PHONY : UnitTest_IsingSystem.cpp.o
-
-UnitTest_IsingSystem.i: UnitTest_IsingSystem.cpp.i
-.PHONY : UnitTest_IsingSystem.i
+UnitTest.i: UnitTest.cpp.i
+.PHONY : UnitTest.i
 
 # target to preprocess a source file
-UnitTest_IsingSystem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTests_catch2.dir/build.make CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSystem.cpp.i
-.PHONY : UnitTest_IsingSystem.cpp.i
+UnitTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTests_catch2.dir/build.make CMakeFiles/UnitTests_catch2.dir/UnitTest.cpp.i
+.PHONY : UnitTest.cpp.i
 
-UnitTest_IsingSystem.s: UnitTest_IsingSystem.cpp.s
-.PHONY : UnitTest_IsingSystem.s
+UnitTest.s: UnitTest.cpp.s
+.PHONY : UnitTest.s
 
 # target to generate assembly for a file
-UnitTest_IsingSystem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTests_catch2.dir/build.make CMakeFiles/UnitTests_catch2.dir/UnitTest_IsingSystem.cpp.s
-.PHONY : UnitTest_IsingSystem.cpp.s
+UnitTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnitTests_catch2.dir/build.make CMakeFiles/UnitTests_catch2.dir/UnitTest.cpp.s
+.PHONY : UnitTest.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -334,12 +310,9 @@ help:
 	@echo "... Catch2WithMain"
 	@echo "... UnitTests_catch2"
 	@echo "... a.out"
-	@echo "... UnitTest_IsingSpin.o"
-	@echo "... UnitTest_IsingSpin.i"
-	@echo "... UnitTest_IsingSpin.s"
-	@echo "... UnitTest_IsingSystem.o"
-	@echo "... UnitTest_IsingSystem.i"
-	@echo "... UnitTest_IsingSystem.s"
+	@echo "... UnitTest.o"
+	@echo "... UnitTest.i"
+	@echo "... UnitTest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
