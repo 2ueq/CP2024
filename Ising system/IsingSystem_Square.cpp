@@ -1,24 +1,31 @@
 #include"IsingSystem_Square.hpp"
 #include<iostream>
 #include<vector>
-#include
+using namespace std;
 
 int main(){
-    IsingSystem_Square spin;
-    int L[4]={2,3,4,5};
+    double start=0.05;
+    double end=4.0;
+    double step=0.05;
 
     //初始化T（beta-1）
+    std::vector<double>Temperature;
     std::vector<double>betaJ;
-    for(double i=0.05;i<=4.0;i+=0.05){
-        betaJ.push_back(1/i);
+    for(double i=start;i<end;i+=step){
+        Temperature.push_back(i);
+        betaJ.push_back(1.0/i);
     };
-    spin.beta=betaJ;
-
-    for(){
-        for(std::size_t beta_idx=0;beta_idx<beta.size();beta_idx++){
-
-        };
-    };
+    
+    const std::vector<int>system_size={5,5};
+    IsingSystem_Square spin(system_size,betaJ);
+    
+    spin.exact();
+    spin.print_exact();
 
     return 0;
 };
+
+// betaJ={0.1,1,4};
+// for(int i = 0; i < 16; i++){
+    //     cout << "for configuration idx:" << i << ": energy*weight=" << spin._exact_energy_q(80,i) << endl;
+    // }
