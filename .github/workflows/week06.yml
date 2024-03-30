@@ -1,0 +1,31 @@
+name: Unit Tests for Ising simulation
+
+on:
+  push:
+
+jobs:
+  build:
+    name: Build&Tests
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+
+    runs-on: ${{matrix.os}}
+
+    steps: 
+    - name: Checkout repository
+      users:actions/checkout@v3
+
+    - name: Configure by Cmake
+      run: |
+          mkdir build
+          cd build
+          cmake ../CP2024/
+
+    - name: Build
+      working-directory: build
+      run: make
+
+    - name: Test
+      working-directory: build
+      run: ctest
