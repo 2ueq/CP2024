@@ -20,7 +20,7 @@ jobs:
       run: |
           mkdir build
           cd build
-          cmake ../CP2024/
+          cmake ../CP2024/build/
 
     - name: Build
       working-directory: build
