@@ -18,8 +18,8 @@ jobs:
 
     - name: Configure by Cmake
       run: |
-        cd CP2024/build
-          cmake ../CP2024/build/
+          cd CP2024/build
+          cmake ..
 
     - name: Build
       working-directory: build
