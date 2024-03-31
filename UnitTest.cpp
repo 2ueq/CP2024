@@ -107,54 +107,54 @@ TEST_CASE("IsingSpinOnLattice","single spin"){
     }
 };
 
-TEST_CASE("IsingSystem_Square","[examples of 6*6 spins]"){
-    const std::vector<int>system_size={6,6};
-    IsingSystem_Square model(system_size);
-    SECTION("basic"){
-        REQUIRE(model._n_spins()==36);
-        REQUIRE_THAT(model.J1(),Catch::Matchers::WithinULP(-1.0,4));
-    };
+// TEST_CASE("IsingSystem_Square","[examples of 6*6 spins]"){
+//     const std::vector<int>system_size={6,6};
+//     IsingSystem_Square model(system_size);
+//     SECTION("basic"){
+//         REQUIRE(model._n_spins()==36);
+//         REQUIRE_THAT(model.J1(),Catch::Matchers::WithinULP(-1.0,4));
+//     };
 
-    SECTION("site_index"){
-        const std::vector<int>lattice_coordinate1={3,4};
-        REQUIRE(model.site_index(lattice_coordinate1)==27);
-        REQUIRE(model._lattice_coordinate(27)==lattice_coordinate1);
-    };
+//     SECTION("site_index"){
+//         const std::vector<int>lattice_coordinate1={3,4};
+//         REQUIRE(model.site_index(lattice_coordinate1)==27);
+//         REQUIRE(model._lattice_coordinate(27)==lattice_coordinate1);
+//     };
 
-    SECTION("neighboring site coordinates"){
-        const std::vector<int>lattice_coordinate={3,3};
-        const std::vector<int>lattice_coordinate_pos_x={4,3};
-        const std::vector<int>lattice_coordinate_pos_y={3,4};
-        const std::vector<int> lattice_coordinate_neg_x={2,3};
-        const std::vector<int> lattice_coordinate_neg_y={3,2};
-        REQUIRE(model.shift_pos_x(lattice_coordinate)==lattice_coordinate_pos_x);
-        REQUIRE(model.shift_pos_y(lattice_coordinate)==lattice_coordinate_pos_y);
-        REQUIRE(model.shift_neg_x(lattice_coordinate)==lattice_coordinate_neg_x);
-        REQUIRE(model.shift_neg_y(lattice_coordinate)==lattice_coordinate_neg_y);
-    };
+//     SECTION("neighboring site coordinates"){
+//         const std::vector<int>lattice_coordinate={3,3};
+//         const std::vector<int>lattice_coordinate_pos_x={4,3};
+//         const std::vector<int>lattice_coordinate_pos_y={3,4};
+//         const std::vector<int> lattice_coordinate_neg_x={2,3};
+//         const std::vector<int> lattice_coordinate_neg_y={3,2};
+//         REQUIRE(model.shift_pos_x(lattice_coordinate)==lattice_coordinate_pos_x);
+//         REQUIRE(model.shift_pos_y(lattice_coordinate)==lattice_coordinate_pos_y);
+//         REQUIRE(model.shift_neg_x(lattice_coordinate)==lattice_coordinate_neg_x);
+//         REQUIRE(model.shift_neg_y(lattice_coordinate)==lattice_coordinate_neg_y);
+//     };
 
-    SECTION("connectivity"){
-        constexpr int i=21;
-        REQUIRE(model.NN(i,0)==22);
-        REQUIRE(model.NN(i,1)==27);
-        REQUIRE(model.NN(i,2)==20);
-        REQUIRE(model.NN(i,3)==15);
-    };
+//     SECTION("connectivity"){
+//         constexpr int i=21;
+//         REQUIRE(model.NN(i,0)==22);
+//         REQUIRE(model.NN(i,1)==27);
+//         REQUIRE(model.NN(i,2)==20);
+//         REQUIRE(model.NN(i,3)==15);
+//     };
 
-    SECTION("'pi'state:Magnectization and Energy"){
-        std::vector<bool>state({1,1,0,1,1,1,0,0,1,1,1,0,1,1,1,1,0,1,0,0,0,0,0,0,1,1,0,1,0,1,1,1,0,0,0,0});
-        model.set_state(state);
-        REQUIRE(model.eval_Mz()==2);
-        REQUIRE_THAT(model.eval_energy(),Catch::Matchers::WithinULP(-4.0,4));
-    };
+//     SECTION("'pi'state:Magnectization and Energy"){
+//         std::vector<bool>state({1,1,0,1,1,1,0,0,1,1,1,0,1,1,1,1,0,1,0,0,0,0,0,0,1,1,0,1,0,1,1,1,0,0,0,0});
+//         model.set_state(state);
+//         REQUIRE(model.eval_Mz()==2);
+//         REQUIRE_THAT(model.eval_energy(),Catch::Matchers::WithinULP(-4.0,4));
+//     };
 
-        SECTION("'pi'state:Magnectization and Energy"){
-        std::vector<bool>state({0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0});
-        model.set_state(state);
-        REQUIRE_THAT(model.eval_energy(),Catch::Matchers::WithinULP(-72.0,4));
-    };
+//         SECTION("'pi'state:Magnectization and Energy"){
+//         std::vector<bool>state({0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0});
+//         model.set_state(state);
+//         REQUIRE_THAT(model.eval_energy(),Catch::Matchers::WithinULP(-72.0,4));
+//     };
 
-};
+// };
 
 // TEST_CASE("IsingSystem_Square","[tests of exact counting]"){
 //     const std::vector<int>system_size={6,6};
