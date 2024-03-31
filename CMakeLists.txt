@@ -15,7 +15,7 @@ target_compile_options(a.out PRIVATE -Wall -Wextra)
 
 # unit tests
 enable_testing()
-add_executable(UnitTests_catch2 UnitTest.cpp)
-target_compile_options(UnitTests_catch2 PRIVATE -Wall -Wextra)
-target_link_libraries(UnitTests_catch2 Catch2::Catch2WithMain)
-add_test(UnitTest UnitTests_catch2)
+add_executable(UnitTest_catch2 UnitTest.cpp)
+target_compile_options(UnitTest_catch2 PRIVATE -Wall -Wextra)
+target_link_libraries(UnitTest_catch2 Catch2::Catch2WithMain)
+add_test(UnitTest UnitTest_catch2)
