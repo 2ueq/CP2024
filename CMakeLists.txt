@@ -6,6 +6,7 @@ FetchContent_Declare(catch2
 )
 FetchContent_MakeAvailable(Catch2)
 
+
 # main (irrelevant now; temporary settings here)
 cmake_minimum_required(VERSION 3.14)
 set(CMAKE_CXX_STANDARD 14)
