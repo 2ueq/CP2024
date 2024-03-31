@@ -18,7 +18,6 @@ jobs:
 
     - name: Configure by Cmake
       run: |
-          mkdir build
           cd build
           cmake ../CP2024/build/
 
